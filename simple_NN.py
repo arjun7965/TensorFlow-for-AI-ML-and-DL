@@ -17,4 +17,4 @@ ys = np.array([-3.0, 3.0, 9.0, -5.0, 11.0, 5.0, 15.0], dtype=float)
 model.fit(xs, ys, epochs=500)
 
 #predict the value of y for a given x
-print(model.predict([10.0]))
+print("Value of y = %f" %model.predict([10.0]))
