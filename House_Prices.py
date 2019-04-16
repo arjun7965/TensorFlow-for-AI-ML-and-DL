@@ -11,5 +11,8 @@ ys = np.array([1.0, 2.0, 3.5, 5.5, 1.5, 5.0, 6.5], dtype=float)
 #train the NN for 500 epochs
 model.fit(xs, ys, epochs=500)
 
+#predict house value for y
+y=7
+
 #predict the value of the house for 7 bedrooms
-print(model.predict([7.0]))
+print('Value of the house for %d bedrooms = %fk' % (y, model.predict([y])))
